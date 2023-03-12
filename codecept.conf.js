@@ -12,13 +12,13 @@ exports.config = {
   output: 'e2e/outputs',
   helpers: {
     Puppeteer: {
-      url: 'http://127.0.0.1:9000',
+      url: 'http://localhost:8080',
       show: true,
-      windowSize: 'y'
-    }
+      windowSize: 'y',
+    },
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
   },
-  name: 'movie-catalogue-e2e'
-}
+  name: 'movie-catalogue-e2e',
+};
