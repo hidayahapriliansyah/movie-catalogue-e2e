@@ -62,7 +62,7 @@ Scenario('searching movies', async ({ I }) => {
   assert.strictEqual(matchingMovies.length, visibleLikedMovies);
 
   matchingMovies.forEach(async (title, index) => {
-    const visibleTitle = await I.grabTextFrom(locate('.movite__title').at(index + 1));
+    const visibleTitle = await I.grabTextFrom(locate('.movie__title').at(index + 1));
     assert.strictEqual(title, visibleTitle);
   });
 
